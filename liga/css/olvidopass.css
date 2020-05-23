@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+** {
+    box-sizing: border-box;
+    outline: none!important;
+}
+
+.passw {
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.passw::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.passw .caja2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.passw .caja2 .titulo1 h2 {
+    text-align: center;
+    margin: 10px 0px 20px;
+    color: black
+}
+
+.passw .caja2 .titulo1 h3 {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.passw .caja2 .bodyform1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.passw .caja2 .bodyform1 input {
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    transition: box-shadow .5s ease;
+}
+
+.passw .caja2 .bodyform1 input:focus {
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+.passw .caja2 .bodyform1 input::placeholder {
+    color: #ffffff;
+}
+
+.passw .caja2 .footerform1 {
+    text-align: center;
+}
+
+.passw .caja2 .footerform1 button {
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 0px 50px;
+    color: #ffffff;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .5s ease;
+}
+
+.passw .caja2 .footerform1 button:hover {
+    background-color: #ffffff;
+    color: blue;
+}
+
+.passw .caja2 .footerform1 button:active {
+    font-weight: bold;
+}
+
+@media screen and (max-width:500px) {
+    .passw {
+        background-image: url('../imagenes/imagen2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
