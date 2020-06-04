@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="X-UA-Caompatible" content="ie=edge">-->
+    <title>FUTSAL DISTRITAL</title>
+    <link rel=" icon " type="image/jpg " href="imagenes/pelota5.jpg ">
+    <link rel="stylesheet " href="css1/all.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,500&display=swap " rel="stylesheet ">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet " type="text/css" href="css/estilosgrid.css ">
+</head>
+
+<body>
+    <div class="padre ">
+        <header class="header ">
+            <div class="menuinicial ">
+                <a href="ligasgrid.html" class="logo"><img src="imagenes/logopp.png "></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label class="menu-icon" for="menu-btn">Menu</label>
+                <ul class="menu">
+                    <!--<li><a href="#variasligas">Ligas</a></li>
+                    <li><a href="#variosequipos">Equipos</a></li>
+                    <li><a href="#estadisticas">Resultados</a></li>-->
+                    <li><a href="#loginfinal">Login</a></li>
+                </ul>
+            </div>
+            <div class="texto-principal margen-interno ">
+                <h1 class="T1 ">¡Bienvenido!</h1>
+                <h2 class="T2 ">Aqui podrá revisar todo acerca de las ligas distritales de futsal</h2>
+                <!-- <button type="button " href="# ">Ver Ligas</button>-->
+            </div>
+
+            <div class="image">
+                <img src="imagenes/AMINAD1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="imagenes/cholololo1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="imagenes/handfast1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="imagenes/belaunde1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="imagenes/stexpress1.jpg" alt="">
+            </div>
+        </header>
+
+        <section class="section " id="variasligas">
+            <h1 class="tituloliga">LIGAS DISTRITALES</h1>
+            <section class="ligas_1">
+                <div class="conteligas">
+                    <div class="efecto">
+                        <article class="adelante">
+                            <img src="imagenes/LIGASMP.jpg">
+                        </article>
+                        <article class="atras">
+                            <div class="datos">
+                                <h2 class="promotor">Promotor:</h2>
+                                <p class="datospro">datos promotor</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="conteligas">
+                    <div class="efecto">
+                        <article class="adelante">
+                            <img src="imagenes/LIGAOLIVOS.jpg">
+                        </article>
+                        <article class="atras">
+                            <div class="datos">
+                                <h2 class="promotor">Promotor:</h2>
+                                <p class="datospro">datos promotor</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="conteligas">
+                    <div class="efecto">
+                        <article class="adelante">
+                            <img src="imagenes/LIGAINDEPENDENCIA.jpg">
+                        </article>
+                        <article class="atras">
+                            <div class="datos">
+                                <h2 class="promotor">Promotor:</h2>
+                                <p class="datospro">datos promotor</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section2 margen-interno" id="variosequipos">
+            <div class="equipos ">
+                <h1>aqui van los equipos</h1>
+            </div>
+        </section>
+        <section class="section1 margen-interno" id="estadisticas">
+
+            <div class="todoligas ">
+                <div class="tablaposicion ">
+                    <h1>aqui va la tabla de posiciones</h1>
+                </div>
+                <div class="fechas ">
+                    <h1>aqui va las fechas</h1>
+                </div>
+                <div class="resultados ">
+                    <h1>aqui van los resultados</h1>
+                </div>
+                <div class="cancha ">
+                    <h1>aqui va la direccion de la cancha</h1>
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer margen-interno " id="loginfinal">
+            <div class="login ">
+                <h1>aqui poner el login</h1>
+            </div>
+            <div class="creadopor ">
+                <h5>Creado por Yamir infante</h5>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--<script src="js/liga.js"></script>-->
+    <script>
+        var index = 0;
+        var images;
+        var time;
+
+        autoSlide();
+
+        function autoSlide(n) {
+            images = document.getElementsByClassName('image');
+
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+
+            if (index > images.length - 1) {
+                index = 0;
+            }
+            images[index].style.display = "block";
+            index++;
+
+            time = setTimeout(autoSlide, 1200);
+        }
+    </script>
+
+</body>
+
+</html>

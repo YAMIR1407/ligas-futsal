@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGAS DISTRITALES</title>
+    <link rel="icon" type="image/jpg" href="../imagenes/pelota5.jpg">
+    <!--se referencia a CSS-->
+    <link rel="stylesheet" href="../css/adminis.css">
+</head>
+
+<body>
+    <div id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="title"><span>Administrador</span></div>
+            <div id="menu-btn">
+                <div class="btn-lista"></div>
+                <div class="btn-lista"></div>
+                <div class="btn-lista"></div>
+            </div>
+        </div>
+        <div id="profile">
+            <div id="photo"><img src="../imagenes/yamir2.jpg"></div>
+            <div id="name"><span>Yamir Infante</span></div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Home"><img src="../imagenes/home.png"></div>
+                    <div class="title"><span>Home</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Perfil"><img src="../imagenes/perfil.png"></div>
+                    <div class="title"><span>Perfil</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Ligas"><img src="../imagenes/ligas.jpg"></div>
+                    <div class="title"><span>Ligas</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Promotores"><img src="../imagenes/promotor3.png"></div>
+                    <div class="title"><span>Promotores</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Equipos"><img src="../imagenes/equipo2.png"></div>
+                    <div class="title"><span>Equipos</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Delegados"><img src="../imagenes/delegado3.png"></div>
+                    <div class="title"><span>Delegados</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Técnicos"><img src="../imagenes/coach.png"></div>
+                    <div class="title"><span>Técnicos</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Jugadores"><img src="../imagenes/jugadores2.png"></div>
+                    <div class="title"><span>Jugadores</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="caja">
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Tabla de posiciones"><img src="../imagenes/home.png"></div>
+                    <div class="title"><span>Tabla de posiciones</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Resultados"><img src="../imagenes/home.png"></div>
+                    <div class="title"><span>Resultados</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Próximos partidos"><img src="../imagenes/home.png"></div>
+                    <div class="title"><span>Próximos partidos</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon" title="Fixture completo"><img src="../imagenes/home.png"></div>
+                    <div class="title"><span>Fixture completo</span></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+            document.querySelector('body').classList.toggle('body-expanded');
+        })
+    </script>
+
+</body>
+
+</html>

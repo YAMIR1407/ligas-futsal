@@ -1,0 +1,318 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+        overflow: hidden;
+    }
+    
+    .padre {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .padre .header {
+        background: url(../imagenes/jjj.JPG);
+        background-position: center;
+        background-attachment: containt;
+        border-style: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+    }
+    
+    .padre .header .menuinicial {
+        background-color: rgba(128, 123, 123, 0.7);
+        box-shadow: 1px 1px 4px 0 rgba(204, 35, 35, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .menuinicial ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: none;
+    }
+    
+    .menuinicial ul a {
+        color: #ffffff;
+        font-size: 18px;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+    
+    .menuinicial ul a:hover {
+        background: #333333;
+        color: #ffffff;
+        border-radius: 50px;
+        outline: 0 !important;
+        outline-width: 0 !important;
+        padding: 18px;
+    }
+    
+    .menuinicial ul a:active {
+        font-weight: bold;
+    }
+    
+    .menuinicial .logo {
+        float: left;
+        display: block;
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+    
+    .menuinicial .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    
+    .menuinicial .menu-icon {
+        color: #ffffff;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .menuinicial .menu-icon:active {
+        font-weight: bold;
+    }
+    
+    .menuinicial .menu-btn {
+        display: none;
+    }
+    
+    .menuinicial .menu-btn:checked~.menu {
+        max-height: 350px;
+    }
+    
+    .padre .header .texto-principal {
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        flex-flow: column;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .padre .header .texto-principal .T1 {
+        display: flex;
+        font-size: 60px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .padre .header .texto-principal .T2 {
+        display: flex;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 100;
+        text-align: center;
+        word-wrap: break-word;
+        width: 350px;
+    }
+    
+    .image {
+        width: 100%;
+        height: 130px;
+        animation: smooth 0.5s;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .image img {
+        width: auto;
+        height: auto;
+    }
+    
+    @keyframes smooth {
+        from {
+            transform: scale(1.3);
+            opacity: 0.9;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .padre .section {
+        background: url(../imagenes/fondofinal1.JPG);
+        background-position: center;
+        background-attachment: containt;
+        border-style: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+    }
+    
+    .padre .section .tituloliga {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .padre .section .promotor {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .padre .section .datospro {
+        font-size: 10px;
+        color: black;
+    }
+    
+    .padre .section img {
+        width: 100%;
+    }
+    
+    .padre .section .ligas_1 {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .padre .section .efecto {
+        background: #ffffff;
+        width: 180px;
+        height: 210px;
+        position: relative;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: .7s ease;
+        box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    }
+    
+    .padre .section .conteligas {
+        margin: 10px;
+        perspective: 800;
+    }
+    
+    .padre .section .adelante {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    .padre .section .atras {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    .padre .section .atras {
+        background: #f1f1f1;
+        transform: rotateY(180deg);
+    }
+    
+    .padre .section .conteligas:hover .efecto {
+        transform: rotateY(180deg);
+    }
+    
+    .padre .section2 {
+        background: #000000;
+    }
+    
+    .padre .section2 .equipos {
+        background: red;
+    }
+    
+    .padre .section1 {
+        background: #000000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .padre .section1 .todoligas {
+        background: red;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .padre .section1 .tablaposicion {
+        background: blue;
+        flex: 1 1 auto;
+    }
+    
+    .padre .section1 .fechas {
+        background: blue;
+        flex: 1 1 auto;
+    }
+    
+    .padre .section1 .resultados {
+        background: blue;
+        flex: 1 1 auto;
+    }
+    
+    .padre .section1 .cancha {
+        background: cyan;
+        flex: 1 1 100%;
+    }
+    
+    .padre .footer {
+        background: #000000;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .padre .footer .login {
+        background: red;
+    }
+    
+    .padre .footer .creadopor {
+        background: red;
+    }
+    
+    .padre .footer .creadopor h5 {
+        background: blue;
+        text-align: center;
+    }
+    
+    @media (min-width:750px) {
+        .header li {
+            float: left;
+        }
+        .header li a {
+            padding: 20px 30px;
+        }
+        .header .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+        }
+        .header .menu-icon {
+            display: none;
+            color: #ffffff;
+        }
+    }
+    
+    @media all and (max-width: 350px) {
+        .padre .header .texto-principal .T1 {
+            font-size: 50px;
+        }
+        .padre .header .texto-principal .T2 {
+            font-size: 15px;
+        }
+        .padre .header .menuinicial .logo img {
+            height: 80px;
+            width: 170px;
+        }
+    }

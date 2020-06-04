@@ -2,14 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    outline: none!important;
-}
-
-.LIGAS {
     background-image: url('../imagenes/fondo.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -18,7 +10,12 @@ body {
     margin: 0 auto;
 }
 
-.LIGAS::after {
+* {
+    box-sizing: border-box;
+    outline: none!important;
+}
+
+body::after {
     content: '';
     position: absolute;
     left: 0px;
@@ -29,7 +26,7 @@ body {
     z-index: 1;
 }
 
-.LIGAS .caja {
+.caja {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -40,19 +37,19 @@ body {
     z-index: 2;
 }
 
-.LIGAS .caja .titulo h2 {
+.caja .titulo h2 {
     text-align: center;
     margin: 10px 0px 20px;
     color: #ffffff
 }
 
-.LIGAS .caja .bodyform {
+.caja .bodyform {
     display: flex;
     flex-direction: column;
 }
 
-.LIGAS .caja .bodyform input {
-    height: 40px;
+.caja .bodyform input {
+    height: 35px;
     margin-bottom: 20px;
     border: 1px solid #ffffff;
     width: 100%;
@@ -63,33 +60,34 @@ body {
     transition: box-shadow .5s ease;
 }
 
-.LIGAS .caja .bodyform input:focus {
+.caja .bodyform input:focus {
     box-shadow: 0px 0px 10px #ffffff;
 }
 
-.LIGAS .caja .bodyform input::placeholder {
+.caja .bodyform input::placeholder {
     color: #ffffff;
 }
 
-.LIGAS .caja .bodyform h4 {
+.caja .bodyform h4 {
     text-align: center;
-    margin: 110px 60px 20px;
-    font-size: 10px;
+    margin: -12px 25px 10px;
+    font-size: 11px;
     color: rgb(160, 150, 150);
     cursor: pointer;
     position: absolute;
+    width: 200px;
 }
 
-.LIGAS .caja .bodyform h4:hover {
+.caja .bodyform h4:hover {
     color: #f0eaea;
 }
 
-.LIGAS .caja .footerform {
+.caja .footerform {
     text-align: center;
 }
 
-.LIGAS .caja .footerform button {
-    height: 40px;
+.caja .footerform button {
+    height: 35px;
     border-radius: 20px;
     margin-top: 20px;
     padding: 0px 50px;
@@ -100,17 +98,17 @@ body {
     transition: box-shadow .5s ease;
 }
 
-.LIGAS .caja .footerform button:hover {
+.caja .footerform button:hover {
     background-color: #ffffff;
     color: blue;
 }
 
-.LIGAS .caja .footerform button:active {
+.caja .footerform button:active {
     font-weight: bold;
 }
 
 @media screen and (max-width:500px) {
-    .LIGAS {
+    body {
         background-image: url('../imagenes/imagen2.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;

@@ -2,14 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-}
-
-** {
-    box-sizing: border-box;
-    outline: none!important;
-}
-
-.passw {
     background-image: url('../imagenes/fondo.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -18,7 +10,7 @@ body {
     margin: 0 auto;
 }
 
-.passw::after {
+body::after {
     content: '';
     position: absolute;
     left: 0px;
@@ -29,7 +21,7 @@ body {
     z-index: 1;
 }
 
-.passw .caja2 {
+.caja2 {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -40,26 +32,26 @@ body {
     z-index: 2;
 }
 
-.passw .caja2 .titulo1 h2 {
+.caja2 .titulo1 h2 {
     text-align: center;
     margin: 10px 0px 20px;
-    color: black
+    color: #ffffff
 }
 
-.passw .caja2 .titulo1 h3 {
+.caja2 .titulo1 h3 {
     text-align: center;
     margin: 10px;
     font-size: 12px;
     color: white;
 }
 
-.passw .caja2 .bodyform1 {
+.caja2 .bodyform1 {
     display: flex;
     flex-direction: column;
 }
 
-.passw .caja2 .bodyform1 input {
-    height: 40px;
+.caja2 .bodyform1 input {
+    height: 35px;
     margin-bottom: 20px;
     border: 1px solid #ffffff;
     width: 100%;
@@ -70,22 +62,24 @@ body {
     transition: box-shadow .5s ease;
 }
 
-.passw .caja2 .bodyform1 input:focus {
+.caja2 .bodyform1 input:focus {
+    outline: 0 !important;
+    outline-width: 0 !important;
     box-shadow: 0px 0px 10px #ffffff;
 }
 
-.passw .caja2 .bodyform1 input::placeholder {
+.caja2 .bodyform1 input::placeholder {
     color: #ffffff;
 }
 
-.passw .caja2 .footerform1 {
+.caja2 .footerform1 {
     text-align: center;
 }
 
-.passw .caja2 .footerform1 button {
-    height: 40px;
+.caja2 .footerform1 button {
+    height: 35px;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 0px 50px;
     color: #ffffff;
     background-color: blue;
@@ -94,17 +88,21 @@ body {
     transition: box-shadow .5s ease;
 }
 
-.passw .caja2 .footerform1 button:hover {
+.caja2 .footerform1 button:hover {
+    outline: 0 !important;
+    outline-width: 0 !important;
     background-color: #ffffff;
     color: blue;
 }
 
-.passw .caja2 .footerform1 button:active {
+.caja2 .footerform1 button:active {
+    outline: 0 !important;
+    outline-width: 0 !important;
     font-weight: bold;
 }
 
 @media screen and (max-width:500px) {
-    .passw {
+    body {
         background-image: url('../imagenes/imagen2.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
